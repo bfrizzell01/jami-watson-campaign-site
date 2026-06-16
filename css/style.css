@@ -124,6 +124,13 @@ header.hdr1 {
   color: white;
 }
 
+.bio_link {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+  text-decoration: underline;
+}
+
 /* ISSUES SECTION */
 .hdr2 {
   margin: 0;
