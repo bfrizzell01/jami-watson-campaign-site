@@ -16,7 +16,11 @@ header.hdr1 {
   margin: 0;
   padding: 0;
   width: 100%;
+  background-color: darkcyan;
   box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 /* Ensure container doesn't add unwanted spacing */
@@ -24,7 +28,6 @@ header.hdr1 {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: darkcyan;
 }
 
 /* Flex container for the header bar */
@@ -47,6 +50,7 @@ header.hdr1 {
   font-size: 1.25rem;
   line-height: 1.1;
   color: white;
+  font-weight: bold;
 }
 
 .hdr1__municipality {
