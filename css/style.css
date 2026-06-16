@@ -89,6 +89,41 @@ header.hdr1 {
   border-radius: 1px;
 }
 
+/* HERO AND BIO SECTION */
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 500px;             /* adjust to taste */
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;           /* vertically center the bio */
+  justify-content: flex-start;   /* align to left — change to center if preferred */
+}
+
+.bio__container {
+  margin: 40px;
+  padding: 20px 28px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  max-width: 480px;              /* prevents it from stretching too wide */
+}
+
+.bio_name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.bio_content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+}
+
 .issue-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
