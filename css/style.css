@@ -3,6 +3,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-image: url('../images/p6.webp');
+  background-size: repeat;
 }
 
 /* Remove default margin on headings */
@@ -67,6 +69,10 @@ header.hdr1 {
   border: none;
   background: transparent;
   cursor: pointer;
+}
+
+.hdr1__dropdown-toggle::after {
+  content: ' ▾';
 }
 
 .hdr1__nav-link {
