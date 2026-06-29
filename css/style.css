@@ -59,12 +59,6 @@ header.hdr1 {
   color: white;
 }
 
-/* Actions (burger) on the right */
-.hdr1__actions {
-  display: flex;
-  align-items: center;
-}
-
 .hdr1__toggle {
   display: inline-flex;
   align-items: center;
@@ -75,19 +69,18 @@ header.hdr1 {
   cursor: pointer;
 }
 
-/* Burger lines */
-.hdr1__burger {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 24px;
+.hdr1__nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 6px 12px;
 }
 
-.hdr1__burger span {
-  height: 2px;
-  background: white;
-  border-radius: 1px;
+.hdr1__nav-link:hover {
+  text-decoration: underline;
 }
+
 
 /* HERO AND BIO SECTION */
 
@@ -129,6 +122,10 @@ header.hdr1 {
   line-height: 1.6;
   color: white;
   text-decoration: underline;
+}
+
+.bio_link:hover {
+  font-weight: bold;
 }
 
 /* ISSUES SECTION */
@@ -191,6 +188,10 @@ header.hdr1 {
   border-radius: 4px;
   font-size: clamp(1rem, 8cqi, 2rem);
   white-space: nowrap;
+}
+
+.issue-card:hover h3 {
+  text-decoration: underline;
 }
 
 .issue-card img {
