@@ -5,7 +5,15 @@ body {
   padding: 0;
   background-image: url('../images/p6.webp');
   background-size: repeat;
+  min-height: 100%;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 
 /* Remove default margin on headings */
 h1, h2, h3, h4, h5, h6 {
@@ -258,7 +266,7 @@ header.hdr1 {
 .ftr {
   background-color: darkcyan;
   padding: 40px;
-  margin-top: 20px;
+  margin-top: auto;
   background-image: none;
 }
 
