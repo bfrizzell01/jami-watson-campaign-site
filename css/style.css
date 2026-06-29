@@ -133,7 +133,7 @@ header.hdr1 {
 
 /* ISSUES SECTION */
 .hdr2 {
-  margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   width: 100%;
   background-color: darkcyan;
@@ -152,8 +152,21 @@ header.hdr1 {
 
 .issue-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);  /* default: 3 columns */
+  gap: 40px;
+  padding: 0 40px 40px;
+}
+
+@media (max-width: 700px) {
+  .issue-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .issue-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .issue-card {
@@ -184,4 +197,6 @@ header.hdr1 {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 16 / 9;   /* adjust to taste */
+  object-fit: cover;
 }
