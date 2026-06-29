@@ -272,7 +272,7 @@ header.hdr1 {
 .ftr__profile {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 6px;
 }
 
@@ -288,6 +288,7 @@ header.hdr1 {
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
+  line-height: 1.1;
 }
 
 .ftr__municipality {
@@ -324,4 +325,29 @@ header.hdr1 {
 
 .ftr__link:hover {
   text-decoration: underline;
+}
+
+.ftr__icons {
+  display: flex;
+  gap: 16px;
+}
+
+.ftr__icon img {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .ftr__container {
+    flex-wrap: wrap;
+  }
+
+  .ftr__right {
+    margin-left: 0;
+    padding-left: 0;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+  }
 }
