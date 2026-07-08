@@ -79,10 +79,6 @@ header.hdr1 {
   cursor: pointer;
 }
 
-.hdr1__dropdown-toggle::after {
-  content: ' ▾';
-}
-
 .hdr1__nav-link {
   color: white;
   text-decoration: none;
@@ -102,10 +98,14 @@ header.hdr1 {
 
 .hdr1__dropdown {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .hdr1__dropdown-toggle {
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
 }
 
 .hdr1__dropdown-menu {
@@ -134,6 +134,26 @@ header.hdr1 {
 
 .hdr1__dropdown:hover .hdr1__dropdown-menu {
   display: block;
+}
+
+@media (max-width: 500px) {
+  .hdr1__bar {
+    padding: 8px;
+    gap: 4px;
+  }
+
+  .hdr1__name {
+    font-size: 0.85rem;
+  }
+
+  .hdr1__municipality {
+    font-size: 0.65rem;
+  }
+
+  .hdr1__nav-link {
+    font-size: 0.65rem;
+    padding: 4px 6px;
+  }
 }
 
 /* HERO AND BIO SECTION */
