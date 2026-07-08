@@ -256,6 +256,21 @@ header.hdr1 {
   object-fit: cover;
 }
 
+/* ISSUE CONTENT */
+.page-content {
+  flex: 1;
+}
+
+.issue__title {
+  color: rgb(1, 105, 105);
+  font-weight: bold;
+  padding: 12px;
+}
+
+.issue__body {
+  padding: 12px;
+}
+
 /* FOOTER */
 .footer-divider {
   height: 1px;
@@ -266,7 +281,6 @@ header.hdr1 {
 .ftr {
   background-color: darkcyan;
   padding: 40px;
-  margin-top: auto;
   background-image: none;
 }
 
