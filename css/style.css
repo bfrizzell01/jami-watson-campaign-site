@@ -205,7 +205,7 @@ header.hdr1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);  /* default: 3 columns */
   gap: 40px;
-  padding: 0 40px 40px;
+  padding: 0 40px 10px;
 }
 
 @media (max-width: 700px) {
@@ -273,7 +273,7 @@ header.hdr1 {
 
 /* VIDEO */
 .video-section {
-  padding: 0 20px 0px;
+  padding: 0 20px 20px;
 }
 
 .video-section__player {
