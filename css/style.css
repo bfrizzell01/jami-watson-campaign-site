@@ -96,6 +96,7 @@ header.hdr1 {
   align-items: center;
 }
 
+/* DROPDOWN */
 .hdr1__dropdown {
   position: relative;
   display: flex;
@@ -108,10 +109,20 @@ header.hdr1 {
   align-items: center;
 }
 
+.hdr1__dropdown::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 8px;
+}
+
 .hdr1__dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
+  margin-top: 8px;
   left: 0;
   background-color: darkcyan;
   min-width: 160px;
@@ -122,10 +133,10 @@ header.hdr1 {
 
 .hdr1__dropdown-menu a {
   display: block;
-  padding: 10px 16px;
+  padding: 14px 16px;
   color: white;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .hdr1__dropdown-menu a:hover {
