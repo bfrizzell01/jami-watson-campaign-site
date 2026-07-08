@@ -97,6 +97,11 @@ header.hdr1 {
 }
 
 /* DROPDOWN */
+.hdr1__dropdown:hover .hdr1__dropdown-menu,
+.hdr1__dropdown:focus-within .hdr1__dropdown-menu {
+  display: block;
+}
+
 .hdr1__dropdown {
   position: relative;
   display: flex;
@@ -107,6 +112,10 @@ header.hdr1 {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  background: none;
+  border: none;
+  font: inherit;
+  font-weight: bold;
 }
 
 .hdr1__dropdown::after {
