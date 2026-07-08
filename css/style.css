@@ -271,11 +271,27 @@ header.hdr1 {
   padding: 12px;
 }
 
+/* VIDEO */
+.video-section {
+  padding: 0 20px 0px;
+}
+
+.video-section__player {
+  display: block;
+  width: 50%;           
+  max-width: 400px;     
+  min-width: 100px;      
+  height: auto;           
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
 /* FOOTER */
 .footer-divider {
   height: 1px;
   background: #9f9f9f;
-  margin: 20px 40px 48px;
+  margin: 20px 40px 20px;
 }
 
 .ftr {
