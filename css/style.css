@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('../images/p6.webp');
-  background-size: repeat;
   min-height: 100%;
 }
 
@@ -14,14 +13,13 @@ body {
   min-height: 100vh;
 }
 
-
 /* Remove default margin on headings */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
 
-/* Ensure header has no extra margin/padding and fills width */
+/* HEADER */
 header.hdr1 {
   margin: 0;
   padding: 0;
@@ -33,24 +31,22 @@ header.hdr1 {
   z-index: 100;
 }
 
-/* Ensure container doesn't add unwanted spacing */
 .hdr1__container {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-/* Flex container for the header bar */
 .hdr1__bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 12px 16px; /* optional: add some inner spacing */
+  padding: 12px 16px;
 }
 
 /* Stack name + municipality vertically on the left */
-.hrd1__wordmark {
+.hdr1__wordmark {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -98,15 +94,15 @@ header.hdr1 {
 }
 
 /* DROPDOWN */
-.hdr1__dropdown:hover .hdr1__dropdown-menu,
-.hdr1__dropdown:focus-within .hdr1__dropdown-menu {
-  display: block;
-}
-
 .hdr1__dropdown {
   position: relative;
   display: flex;
   align-items: center;
+}
+
+.hdr1__dropdown:hover .hdr1__dropdown-menu,
+.hdr1__dropdown:focus-within .hdr1__dropdown-menu {
+  display: block;
 }
 
 .hdr1__dropdown-toggle {
@@ -153,10 +149,6 @@ header.hdr1 {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.hdr1__dropdown:hover .hdr1__dropdown-menu {
-  display: block;
-}
-
 @media (max-width: 500px) {
   .hdr1__bar {
     padding: 8px;
@@ -178,17 +170,16 @@ header.hdr1 {
 }
 
 /* HERO AND BIO SECTION */
-
 .hero {
   position: relative;
   width: 100%;
-  min-height: 500px;             /* adjust to taste */
+  min-height: 500px;
   background-image: url('../images/hero.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center;           /* vertically center the bio */
-  justify-content: flex-start;   /* align to left — change to center if preferred */
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .bio__container {
@@ -196,7 +187,7 @@ header.hdr1 {
   padding: 20px 28px;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
-  max-width: 480px;              /* prevents it from stretching too wide */
+  max-width: 480px;
 }
 
 .bio_name {
@@ -223,7 +214,7 @@ header.hdr1 {
   font-weight: bold;
 }
 
-/* ISSUES SECTION */
+/* SECTION HEADER */
 .hdr2 {
   margin-bottom: 20px;
   padding: 0;
@@ -242,9 +233,10 @@ header.hdr1 {
   text-align: center;
 }
 
+/* ISSUES GRID */
 .issue-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);  /* default: 3 columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   padding: 0 40px 10px;
 }
@@ -293,11 +285,11 @@ header.hdr1 {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;   /* adjust to taste */
+  aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
-/* ISSUE CONTENT */
+/* ISSUE PAGE CONTENT */
 .page-content {
   flex: 1;
 }
@@ -314,15 +306,15 @@ header.hdr1 {
 
 /* VIDEO */
 .video-section {
-  padding: 0 0px 20px;
+  padding: 0 0 20px;
 }
 
 .video-section__player {
   display: block;
-  width: 50%;           
-  max-width: 400px;     
-  min-width: 100px;      
-  height: auto;           
+  width: 50%;
+  max-width: 400px;
+  min-width: 100px;
+  height: auto;
   margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -332,7 +324,7 @@ header.hdr1 {
 .footer-divider {
   height: 1px;
   background: #9f9f9f;
-  margin: 20px 40px 20px;
+  margin: 20px 40px;
 }
 
 .ftr {
@@ -348,6 +340,7 @@ header.hdr1 {
   width: 100%;
   box-sizing: border-box;
 }
+
 .ftr__profile {
   display: flex;
   flex-direction: column;
