@@ -306,9 +306,9 @@ header.hdr1 {
 
 /* IMAGES FOR ISSUE PAGES */
 
-.issue__image {
+.issue__image, .community__image {
   display: block;
-  width: 70%;
+  width: 80%;
   max-width: 400px;
   min-width: 100px;
   height: auto;
