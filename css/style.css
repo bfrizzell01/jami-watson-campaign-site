@@ -317,6 +317,17 @@ header.hdr1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+.green_spaces__image {
+  display: block;
+  width: 50%;
+  max-width: 400px;
+  min-width: 100px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
 /* VIDEO */
 .video-section {
   padding: 0 0 20px;
