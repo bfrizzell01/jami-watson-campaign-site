@@ -317,9 +317,9 @@ header.hdr1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-.green_spaces__image {
+.green_spaces__image, .housing__image, .seniors_and_family__image {
   display: block;
-  width: 50%;
+  width: 60%;
   max-width: 400px;
   min-width: 100px;
   height: auto;
