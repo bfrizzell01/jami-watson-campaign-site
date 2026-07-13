@@ -304,6 +304,19 @@ header.hdr1 {
   padding: 12px;
 }
 
+/* IMAGES FOR ISSUE PAGES */
+
+.issue__image {
+  display: block;
+  width: 70%;
+  max-width: 400px;
+  min-width: 100px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
 /* VIDEO */
 .video-section {
   padding: 0 0 20px;
@@ -423,3 +436,5 @@ header.hdr1 {
     margin-top: 20px;
   }
 }
+
+
