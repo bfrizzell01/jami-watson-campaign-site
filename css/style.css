@@ -448,6 +448,61 @@ header.hdr1 {
   }
 }
 
+/* Donation cards */
+.donate__card_2 {
+  background-color: #ede8f5;
+  border: 1px solid #b0a0d0;
+  border-radius: 20px;
+  padding: 4px 28px;
+  margin: 0 40px;
+}
+
+.donate__card {
+  background-color: #d4f0f0;
+  border: 1px solid #80c0c0;
+  border-radius: 20px;
+  padding: 4px 28px;
+  margin: 0 40px 16px;
+}
+
+/* Donate subheading */
+.donate__subheading {
+  color: rgb(1, 105, 105);
+  font-size: 20px;
+  padding: 12px;
+}
+
+/* Copy block */
+.copy-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #e8e8e8;
+  border: 1px solid #c0c0c0;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin: 0 12px 12px;
+  font-family: monospace;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.copy-block__btn {
+  background-color: #008B8B;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.copy-block__btn:hover {
+  background-color: #006666;
+}
+
 /* Donation list grids */
 .donate__list {
   display: grid;

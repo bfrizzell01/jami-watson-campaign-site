@@ -1,3 +1,11 @@
+function copyToClipboard(btn, text) {
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.textContent;
+    btn.textContent = 'Copied!';
+    setTimeout(() => { btn.textContent = original; }, 2000);
+  });
+}
+
 document.querySelectorAll('.hdr1__dropdown-toggle').forEach(toggle => {
   toggle.addEventListener('click', (e) => {
     e.stopPropagation();
