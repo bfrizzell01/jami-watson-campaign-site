@@ -486,6 +486,13 @@ header.hdr1 {
   font-family: monospace;
   font-size: 15px;
   box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.copy-block__text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-all;
 }
 
 .copy-block__btn {
@@ -535,4 +542,25 @@ header.hdr1 {
 
 .socials-link:hover{
   text-decoration: underline;
+}
+
+/* Donation cards/lists: tighter margins + smaller text on small screens */
+@media (max-width: 500px) {
+  .donate__card,
+  .donate__card_2 {
+    margin: 0 16px 16px;
+    padding: 4px 16px;
+  }
+
+  .donate__list,
+  .donate__list_2 {
+    margin: 0 16px;
+    padding: 16px 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .copy-block {
+    margin: 0 4px 12px;
+    font-size: 13px;
+  }
 }
