@@ -448,4 +448,36 @@ header.hdr1 {
   }
 }
 
+/* Donation list grids */
+.donate__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 24px;
+  background-color: #e8e8e8;
+  border: 1px solid #c0c0c0;
+  border-radius: 20px;
+  padding: 20px 28px;
+  margin: 0 40px;
+}
 
+.donate__list_2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 24px;
+  background-color: #e8e8e8;
+  border: 1px solid #c0c0c0;
+  border-radius: 20px;
+  padding: 20px 28px;
+  margin: 0 40px;
+}
+
+.socials-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.socials-link:hover{
+  text-decoration: underline;
+}
